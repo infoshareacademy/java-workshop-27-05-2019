@@ -1,0 +1,63 @@
+#main {
+  -fx-background-color: #f0f0f0;
+}
+
+#showScoresButton {
+  -fx-padding: 5px;
+  -fx-font-weight: bold;
+  -fx-border-color: #353535;
+  -fx-border-style: solid;
+  -fx-border-width: 2px;
+  -fx-font-size: 5px;
+  -fx-pref-width: 220px;
+}
+
+#pauseGameButton {
+  -fx-background-color: #FBCA00;
+  -fx-padding: 5px;
+  -fx-font-weight: bold;
+  -fx-border-color: #353535;
+  -fx-border-style: solid;
+  -fx-border-width: 2px;
+  -fx-font-size: 15px;
+  -fx-pref-width: 220px;
+}
+
+#startGameButton {
+  -fx-background-color: #5A9F6E;
+  -fx-padding: 5px;
+  -fx-font-weight: bold;
+  -fx-border-color: #353535;
+  -fx-border-style: solid;
+  -fx-border-width: 2px;
+  -fx-font-size: 15px;
+  -fx-pref-width: 220px;
+}
+
+.leftPanelValue {
+  -fx-background-color: #f0f0f0;
+  -fx-padding: 15px;
+  -fx-spacing: 10px;
+  -fx-font-weight: bold;
+  -fx-border-style: solid;
+  -fx-border-width: 2px;
+  -fx-font-size: 35px;
+  -fx-pref-width: 220px;
+}
+
+.leftPanelScoreValue {
+  -fx-border-color: #4D7859;
+}
+
+.leftPanelTimerValue {
+  -fx-border-color: #FBCA00;
+}
+
+.leftPanelTitle {
+  -fx-background-color: #f0f0f0;
+  -fx-font-size: 20px;
+}
+
+.rightPanelGridButton {
+  -fx-border-color: #B5B4B9;
+}

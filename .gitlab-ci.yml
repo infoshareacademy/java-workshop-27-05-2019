@@ -1,0 +1,37 @@
+image: maven:3.6.1-jdk-12
+
+stages:
+  - build
+
+maven-build-master:
+  stage: build
+  script:
+    - mvn -DskipTests -f pom.xml clean package
+  artifacts:
+    paths:
+      - target/marbles.jar
+  only:
+    - master
+  when: always
+
+maven-build-develop:
+  stage: build
+  script:
+    - mvn -DskipTests -f pom.xml clean package
+  artifacts:
+    paths:
+      - target/marbles.jar
+  only:
+    - develop
+  when: always
+
+maven-build-feature:
+  stage: build
+  script:
+    - mvn -DskipTests -f pom.xml clean package
+  artifacts:
+    paths:
+      - target/marbles.jar
+  only:
+    - /^feature*/
+  when: manual
