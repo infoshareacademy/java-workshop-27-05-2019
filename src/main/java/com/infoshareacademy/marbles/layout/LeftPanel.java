@@ -1,5 +1,6 @@
 package com.infoshareacademy.marbles.layout;
 
+import com.infoshareacademy.marbles.domain.ScoreLabel;
 import com.infoshareacademy.marbles.domain.ScoreValue;
 import com.infoshareacademy.marbles.domain.SpaceLabel;
 import com.infoshareacademy.marbles.domain.TimerLabel;
@@ -29,16 +30,17 @@ public class LeftPanel extends MarblesPanel {
     Button startGameButton = buttonCreator.createStartButton(marbleState, timeline);
     Button showScoresButton = buttonCreator.createShowScoresButton();
 
-    add(ScoreValue.getInstance(marbleState), 0, 0);
-    add(SpaceLabel.getInstance(), 0, 1);
-    add(TimerLabel.getInstance(), 0, 2);
-    add(TimerValue.getInstance(marbleState), 0, 3);
-    add(SpaceLabel.getInstance(), 0, 4);
-    add(startGameButton, 0, 5);
-    add(SpaceLabel.getInstance(), 0, 6);
-    add(pauseGameButton, 0, 7);
-    add(SpaceLabel.getInstance(), 0, 8);
-    add(showScoresButton, 0, 9);
+    add(ScoreLabel.getInstance(),0,0);
+    add(ScoreValue.getInstance(marbleState), 0, 1);
+    add(SpaceLabel.getInstance(), 0, 2);
+    add(TimerLabel.getInstance(), 0, 3);
+    add(TimerValue.getInstance(marbleState), 0, 4);
+    add(SpaceLabel.getInstance(), 0, 5);
+    add(startGameButton, 0, 6);
+    add(SpaceLabel.getInstance(), 0, 7);
+    add(pauseGameButton, 0, 8);
+    add(SpaceLabel.getInstance(), 0, 9);
+    add(showScoresButton, 0, 10);
 
     return this;
   }

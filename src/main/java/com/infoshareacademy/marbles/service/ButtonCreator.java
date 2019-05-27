@@ -41,7 +41,10 @@ public class ButtonCreator {
       }
       return true;
     }, marbleState.getGameStatusProperty().startedValueProperty()));
-
+    startGame.setOnAction(actionEvent -> {
+      marbleState.resetGame(marbleState.getTimeProperty());
+      marbleState.getGameStatusProperty().setStartedValue(true);
+    });
 
     return startGame;
   }
